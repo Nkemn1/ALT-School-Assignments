@@ -10,6 +10,7 @@
       <h1 align="center">Media Attributes</h1>
       <h2 align="center">Specific to HTML</h2>
       <div>
+        <!-- Navigation -->
         <nav>
           <ul>
             <li><a href="#audio">Audio</a></li>
@@ -22,9 +23,13 @@
       </div>
     </header>
     <br />
+<p>
+  This page shows the different media attributes in HTML.
+</p>
+    <!-- Media elements -->
     <section id="audio">
       <h4 align="center">Audio element</h4>
-      <audio controls src="assets/Audio.mp3" type="audio/mpeg">
+      <audio controls src="assets/Audio.mp3">
         Your browser does not support the audio element.
       </audio>
     </section>
@@ -47,9 +52,6 @@
       <iframe
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.792216228524!2d5.0802106748221405!3d8.122626291906883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104820481540fac1%3A0xb324dd3eec5f181b!2sLandmark%20University!5e0!3m2!1sen!2sus!4v1736676559239!5m2!1sen!2sus"
         title="Landmark University Maryland"
-        width="600"
-        height="450"
-        style="border: 0"
       >
       </iframe>
       <p>The maps show an address to Landmark University.</p>
@@ -72,19 +74,22 @@
       </p>
     </section>
 
-    <section>
+    <section id="picture">
       <h4 align="center">Picture element with responsiveness</h4>
+      <p>
+        This responds to change in size of screen using 3 different images.
+      </p>
       <picture>
         <source
-          srcset="Assets/image.jpeg" 
+          srcset="Assets/image 2.jpeg" 
           media="(max-width: 600px)"
         >
         <source
-          srcset="Assets/image.jpeg"
+          srcset="Assets/image 1.jpeg"
           media="(max-width: 900px)"
           >
           <source
-          srcset="Assets/image.jpeg" 
+          srcset="Assets/image 3.jpeg" 
           media="(max-width: 1200px)"
         >
         <img
@@ -93,4 +98,8 @@
         />
       </picture>
   </body>
+  <footer>
+    <p align="center">
+      <a href="#top">Back to Top</a>
+    </p>
 </html>
