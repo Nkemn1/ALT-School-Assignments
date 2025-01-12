@@ -1,11 +1,73 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Media Attributes</title>
+  </head>
+  <body>
+    <header>
+      <h1 align="center">Media Attributes</h1>
+      <h2 align="center">Specific to HTML</h2>
+      <div>
+        <nav>
+          <ul>
+            <li><a href="#audio">Audio</a></li>
+            <li><a href="#video">Video</a></li>
+            <li><a href="#images">Images</a></li>
+            <li><a href="#iframe">Iframe: Maps</a></li>
+            <li><a href="#track">Track</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <br />
+    <section id="audio">
+      <h4 align="center">Audio element</h4>
+      <audio controls src="assets/Audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+    </section>
+
+    <section id="video">
+      <h4 align="center">Video element</h4>
+      <video controls src="Assets/Vid.mp4"></video>
+    </section>
+
+    <section id="images">
+      <h4 align="center">Images element</h4>
+      <img
+        src="Assets/image.jpeg"
+        alt="Image of a pathway made of wood spanning towards a lake"
+      />
+    </section>
+
+    <section id="iframe">
+      <h4 align="center">Maps using Iframe element</h4>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3949.792216228524!2d5.0802106748221405!3d8.122626291906883!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x104820481540fac1%3A0xb324dd3eec5f181b!2sLandmark%20University!5e0!3m2!1sen!2sus!4v1736676559239!5m2!1sen!2sus"
+        title="Landmark University Maryland"
+        width="600"
+        height="450"
+        style="border:0;">
+      </iframe>
+      <p> The maps show an address to Landmark University.</p>
+    </section>
+
+    <section>
+      <h4 align="center">Track element</h4>
+        <video controls>
+            <source src="assets/Vid.mp4" type="video/mp4" />
+            <track
+            src="Assets/A.Time.Called.You.S01E12.WEB-DL Bangla Subtitle By (Mahmud).vtt"
+            kind="subtitles"
+            srclang="bn"
+            label="Bangla"
+            />
+        </video>
+        <p>
+            Video does not match the subtitile however, HTML shows how to use track element
+        </p>
+    </section>
+  </body>
 </html>
