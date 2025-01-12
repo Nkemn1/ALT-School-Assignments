@@ -49,25 +49,48 @@
         title="Landmark University Maryland"
         width="600"
         height="450"
-        style="border:0;">
+        style="border: 0"
+      >
       </iframe>
-      <p> The maps show an address to Landmark University.</p>
+      <p>The maps show an address to Landmark University.</p>
     </section>
 
     <section>
       <h4 align="center">Track element</h4>
-        <video controls>
-            <source src="assets/Vid.mp4" type="video/mp4" />
-            <track
-            src="Assets/A.Time.Called.You.S01E12.WEB-DL Bangla Subtitle By (Mahmud).vtt"
-            kind="subtitles"
-            srclang="bn"
-            label="Bangla"
-            />
-        </video>
-        <p>
-            Video does not match the subtitile however, HTML shows how to use track element
-        </p>
+      <video controls>
+        <source src="assets/Vid.mp4" type="video/mp4" />
+        <track
+          src="Assets/A.Time.Called.You.S01E12.WEB-DL Bangla Subtitle By (Mahmud).vtt"
+          kind="subtitles"
+          srclang="bn"
+          label="Bangla"
+        />
+      </video>
+      <p>
+        Video does not match the subtitile however, HTML shows how to use track
+        element
+      </p>
     </section>
+
+    <section>
+      <h4 align="center">Picture element with responsiveness</h4>
+      <picture>
+        <source
+          srcset="Assets/image.jpeg" 
+          media="(max-width: 600px)"
+        >
+        <source
+          srcset="Assets/image.jpeg"
+          media="(max-width: 900px)"
+          >
+          <source
+          srcset="Assets/image.jpeg" 
+          media="(max-width: 1200px)"
+        >
+        <img
+          src="Assets/image.jpeg"
+          alt="Image of a pathway made of wood spanning towards a lake"
+        />
+      </picture>
   </body>
 </html>
