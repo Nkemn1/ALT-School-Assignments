@@ -97,6 +97,13 @@ This process and steps have equipped me with the knowledge of using git, git rep
         This responds to change in size of screen using 3 different images.
       </p>
       <picture>
+        <source srcset="Assets/image-small.jpeg" media="(max-width: 600px)">
+        <source srcset="Assets/image-medium.jpeg" media="(max-width: 900px)">
+        <source srcset="Assets/image-large.jpeg" media="(min-width: 901px)">
+        <img src="Assets/image-large.jpeg" alt="Responsive image">
+      </picture>
+      <picture>
+
         <source
           srcset="Assets/image 2.jpeg" 
           media="(max-width: 600px)"
@@ -109,10 +116,6 @@ This process and steps have equipped me with the knowledge of using git, git rep
           srcset="Assets/image 3.jpeg" 
           media="(max-width: 1200px)"
         >
-        <img
-          src="Assets/image.jpeg"
-          alt="Image of a pathway made of wood spanning towards a lake"
-        />
       </picture>
   </body>
   <footer>
